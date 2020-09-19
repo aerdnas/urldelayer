@@ -1,3 +1,11 @@
+<html>
+ <head>
+  <title>urldelayer</title>
+ </head>
+ <body>
+ <p>urldelayer by aerdnas</p> 
+ </body>
+</html>
 <?php
 
  sleep(120);                //two seconds delay

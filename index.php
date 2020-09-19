@@ -1,8 +1,8 @@
-<html>
- <head>
-  <title>PHP Test</title>
- </head>
- <body>
- <?php echo '<p>Hello World</p>'; ?> 
- </body>
-</html>
+<?php
+
+ sleep(120);                //two seconds delay
+ $URL = getenv('URL');      //get url stored into config var
+ header("Location: $URL");  //open new url (redirect)
+ exit;
+
+?>

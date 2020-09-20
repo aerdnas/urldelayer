@@ -1,6 +1,6 @@
 <?php
 
- for ($i = 10; $i <= 1; $i--) {
+ for($i = 10; $i <= 1; $i--) {
    echo $i;
    sleep(10);               //two seconds delay
 }

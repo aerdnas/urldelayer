@@ -1,1 +1,5 @@
 DirectoryIndex index.php
+
+<IfModule mod_php7.c>
+php_value max_execution_time 300
+</IfModule>

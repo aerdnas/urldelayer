@@ -11,6 +11,6 @@
    //header("Location: index.php?delay=$DELAY");//recursive call to elapse a new delay
    $RE_URL = "https://urldelayer.herokuapp.com/index.php?delay=".$DELAY;//make new url for recursive connection 
    file_get_contents($RE_URL);}               //recursive connection to elapse a new delay
- exit;
+ //exit;
 
 ?>

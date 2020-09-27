@@ -7,7 +7,7 @@ if($KEY==getenv('KEY'))       //check if the provided auth key is correct
  sleep($DELAY);               //wait 25 seconds (elapse 1 delay)
 
  $URL = getenv('URL');        //get url stored into config var
- file_get_contents($URL);}    //open new url (new connection)
+ file_get_contents($URL);     //open new url (new connection)
 }
 
 ?>

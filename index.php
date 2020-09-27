@@ -1,13 +1,13 @@
 <?php
 
- $DELAY = $_GET['delay'];                     //get from url the number of delays
- sleep(25);                                   //wait 25 seconds (elapse 1 delay)
- $DELAY--;                                    //decrease the number of delays
- if($DELAY==0){                               //if all the delays are elapsed
-   $URL = getenv('URL');                      //get url stored into config var
-   file_get_contents($URL);}                  //open new url (new connection)
- else {                                       //else continue elapsing delays
-   $RE_URL = "https://urldelayer.herokuapp.com/index.php?delay=".$DELAY;//make new url for recursive connection 
-   file_get_contents($RE_URL);}               //recursive connection to elapse a new delay
+$KEY = $_GET['k'];            //get from url the authentication key
+if($KEY==getenv('KEY'))       //check if the provided auth key is correct
+{
+ $DELAY = getenv('DELAY');    //get delay stored into config var
+ sleep($DELAY);               //wait 25 seconds (elapse 1 delay)
+
+ $URL = getenv('URL');        //get url stored into config var
+ file_get_contents($URL);}    //open new url (new connection)
+}
 
 ?>
